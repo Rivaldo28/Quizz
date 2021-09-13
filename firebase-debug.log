@@ -1,0 +1,14 @@
+[debug] [2021-09-09T14:46:58.209Z] ----------------------------------------------------------------------
+[debug] [2021-09-09T14:46:58.238Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\STi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --reauth
+[debug] [2021-09-09T14:46:58.241Z] CLI Version:   9.18.0
+[debug] [2021-09-09T14:46:58.242Z] Platform:      win32
+[debug] [2021-09-09T14:46:58.243Z] Node Version:  v14.17.3
+[debug] [2021-09-09T14:46:58.636Z] Time:          Thu Sep 09 2021 11:46:58 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-09-09T14:46:58.642Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-09T14:46:58.716Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=839559903&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...

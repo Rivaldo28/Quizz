@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-3">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="text-center titulo">Registrar Usuário</h3>
+          <form [formGroup]="registerForm" (ngSubmit)="register()">
+            <div class="mb-3">
+              <input type="text" formControlName="usuario" class="form-control form-control-lg" placeholder="E-mail">
+              <span class="text-danger" 
+              *ngIf="registerForm.get('usuario')?.hasError('required') && registerForm.get('usuario')?.touched">
+                O E-mail <strong>é Obrigatório!</strong>''
+              </span>
+              <span class="text-danger" 
+              *ngIf="registerForm.get('usuario')?.hasError('email') && registerForm.get('usuario')?.touched">
+                E-mail <strong>Inválido!!</strong>''
+              </span>
+            </div>
+            <div class="mb-3">
+              <input type="password" formControlName="password" class="form-control form-control-lg" placeholder="Senha">
+              <span class="text-danger" 
+              *ngIf="registerForm.get('password')?.hasError('required') && registerForm.get('password')?.touched">
+                Digite uma Senha <strong>Válida!</strong>''
+              </span>
+              <span class="text-danger" 
+              *ngIf="registerForm.get('password')?.hasError('minlength') && registerForm.get('password')?.touched">
+                A Senha com minimo <strong>deve ser 6 caracteres!</strong>''
+              </span>
+            </div>
+            <div class="mb-3">
+              <input type="password" formControlName="repetirPassword" class="form-control form-control-lg" placeholder="Repetir Senha">
+              <span class="text-danger" *ngIf="registerForm.hasError('notSame')">
+                As Senhas tem que <strong>Iguais!</strong>
+              </span>
+            </div>
+            <button routerLink="/usuario" class="btn btn-secondary btn-lg">Voltar</button>
+            <button type="submit" [disabled]="registerForm.invalid" class="btn btn-primary btn-lg float-end">Aceitar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
